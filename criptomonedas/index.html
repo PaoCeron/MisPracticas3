@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COTIZADOR DE CRIPTOMONEDAS</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="">
+    <link href="">
+    <link rel="stylesheet" href="">
+</head>
+<body onload="opcionesCriptomoneda()">
+    <div class="row">
+        <div class="one-half column">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvrJOqeCQiWmM0SDSbKlg_XLH82ToTUr3oBQ&usqp=CAU">
+        </div>
+        <div class="one-half column">
+            <h1 class="head">Cotiza Criptomonedas al Instante</h1>
+            <form>
+                <div id="msj-error"></div>
+                <label>Elige tu moneda</label>
+                <select 
+                onchange="cotizarMoneda()"
+                id="moneda"
+                >
+                <option value="">-Seleccione -</option>
+                <option value="USD">Dolar de Estados Unidos</option>
+                <option value="MXN">Peso Mexicano</option>
+                <option value="EUR">Euro</option>
+                <option value="GBP">Libra Esterlina</option>
+                </select>
+                <label>Elige tu Criptomoneda </label>
+                <select 
+                onchange="cotizarMoneda()"
+                id="criptomoneda"
+                >
+            </form>
+        </div>
+    
+</body>
+</html>
