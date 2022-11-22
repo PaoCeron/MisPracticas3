@@ -4,40 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COTIZADOR DE CRIPTOMONEDAS</title>
+    <title>Cotizador De criptomonedas
+    </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2? family= Montserrat:ital@1 & display=swap" rel="hoja de estilo"></link> 
     <link rel="stylesheet" href="estilo.css">
-    <script src="app.js"></script>
-    <link rel="stylesheet" href="">
-    <link href="">
-    <link rel="stylesheet" href="">
 </head>
+<center>
 <body onload="opcionesCriptomoneda()">
-    <div class="row">
-        <div class="one-half column">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvrJOqeCQiWmM0SDSbKlg_XLH82ToTUr3oBQ&usqp=CAU">
+    <div class="contenedor">
+        <div class="row">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR793fGnO5K-pr8y6RNWXJSCJ6Pzq5snSVaxw&usqp=CAU">
         </div>
         <div class="one-half column">
-            <h1 class="head">Cotiza Criptomonedas al Instante</h1>
+            <h1 class="head"> Cotiza Criptomonedas al Instante</h1>
             <form>
-                <div id="msj-error"></div>
+                <div id="mjs-error"></div>
                 <label>Elige tu moneda</label>
-                <select 
-                onchange="cotizarMoneda()"
-                id="moneda"
-                >
-                <option value="">-Seleccione -</option>
-                <option value="USD">Dolar de Estados Unidos</option>
-                <option value="MXN">Peso Mexicano</option>
-                <option value="EUR">Euro</option>
-                <option value="GBP">Libra Esterlina</option>
+                <select onchange="cotizarMonedas()" id="moneda">
+                <option value="">Seleccione -</option>
+                <option value="USD">DOLAR DE ESTADOS UNIDOS</option>
+                <option value="MXN">PESO MEXICANO</option>
+                <option value="EUR">EURO</option>
+                <option value="GBP">LIBRA ESTARLINA</option>
+                
                 </select>
-                <label>Elige tu Criptomoneda </label>
-                <select 
-                onchange="cotizarMoneda()"
+                <br>
+                <label>Elige tu criptomodena</label>
+                <select
+                onchange="cotizarMonedas()"
                 id="criptomoneda"
                 >
-            </form>
+            </select>
+            <br>
+            <button
+            type="button"
+            class="boton"
+            onclick="cotizarMoneda()"    
+        >Calcular</button>
+        </form>
+        <div class="resultado" id="divResultado"></div>
         </div>
-    
+        </center>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
